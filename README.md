@@ -5,12 +5,12 @@ Este es portafolio personal creado con HTML, CSS, Javascript y diferentes herram
 ## Autor
 **Diego Gutiérrez
 
-*[LinkedIn]()
+* [LinkedIn]()
 
 ##Ver ejemplo en vivo
 
 ##Instalación
 Este proyecto no necesita instalación, simplemente abre la carpeta o haz doble click en el .html
 
-##Contratación
-Si quieres contratarme puedes escribirme a Gutierrezmaria.diego@gmail.com
+##Contacto
+Si quieres contactarme puedes escribirme a Gutierrezmaria.diego@gmail.com
