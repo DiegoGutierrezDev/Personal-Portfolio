@@ -5,7 +5,7 @@ Este es portafolio personal creado con HTML, CSS, Javascript y diferentes herram
 ## Autor
 **Diego Gutiérrez
 
-* [LinkedIn]()
+* [LinkedIn](https://www.linkedin.com/in/diegoguti%C3%A9rrezdev/)
 
 ##Ver ejemplo en vivo
 
