@@ -56,9 +56,9 @@ nav {
 }
 
 /*Clases*/
+
+/* Nombre */
 .webdev {
-    display:grid;
-    row-gap: 10%;
     width: 20%;
     margin: 1.5em 0 0 1em;
     text-align: center;
@@ -74,7 +74,10 @@ nav {
     color: var(--light-green);
     font-family: var(--della);
     font-size: 1.50em;
+    display: block;
 }
+
+/* Redes */
 
 .social {
     display: flex; 
@@ -87,7 +90,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin: 0 0.5em 0.5em 0;
-    width: 2%;
+    width: 2.4%;
     border-radius: 100%;
 }
 
@@ -95,65 +98,13 @@ nav {
     background-color: var(--light-green);
     transition-duration: 0.6s;
 }
-/* Animación del nombre */
-.content{
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-    color: var(--white);
-    font-size: 2.26rem;
-    font-family: var(--montserrat);
-    text-transform: uppercase;
-}
-  
-  .greeting {
-    height:50px;
-    overflow:hidden;
-    margin-left: 1rem;
-  }
-  
-  .greeting > div > div {
-    padding: 0.25rem 0.75rem;
-    height:2.81rem;
-    margin-bottom: 2.81rem;
-    display:inline-block;
-  }
-  
-  .greeting div:first-child {
-    animation: text-animation 8s infinite;
-  }
-  
-  .first div {
-    background-color:var(--contrast);
-  }
-  .second div {
-    background-color:var(--light-blue);
-  }
-  .third div {
-    background-color:var(--red);
-  }
-  
-  @keyframes text-animation {
-    0% {margin-top: 0;}
-    10% {margin-top: 0;}
-    20% {margin-top: -5.62rem;}
-    30% {margin-top: -5.62rem;}
-    40% {margin-top: -11.24rem;}
-    60% {margin-top: -11.24rem;}
-    70% {margin-top: -5.62rem;}
-    80% {margin-top: -5.62rem;}
-    90% {margin-top: 0;}
-    100% {margin-top: 0;}
-  }
-/* Fin de animación del nombre */
 
+/* Introducción */
 .avatar {
-    width: 35%;
+    width: 40%;
+    height: 40%;
     margin: 0 1em;
     border-radius: 100%;
-
 }
 
 .description {
@@ -166,7 +117,7 @@ nav {
 }
 
 .description::before {
-    background-image: url(../img/42923.jpg);
+    background-image: url(../img/wave_background.jpg);
     content: "";
     background-size: cover;
     position: absolute;
@@ -176,30 +127,189 @@ nav {
     left: 0px;
     border-radius: 20px;
     opacity: 0.25;
-
 }
 
 .description > div {
     display: flex;
     width: 50%;
     position: relative;
+    justify-content:center;
+    align-items: center;
 }
 
 .description > div > span {
     color: var(--white);
     font-size: medium;
     font-family: var(--della);
+    height: 40%;
+}
+
+#little_description {
+    display: none;
 }
 
 .workingOn {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1.5em;
     margin-bottom: 1em;
     color: var(--white);
     font-size: 4em;
 }
 
+.workingOn img{
+    width:50%;
+    border-radius:20px;
+}
+
+.back{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.back__button{
+    display: none;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*Declaración de Breakpoint para pantallas medianas*/
+@media screen and (max-width: 1200px) {
+
+.webdev {
+    width: 30%;
+}
+
+.social-img
+{
+    width: 3.2%;
+}
+
+.avatar {
+    width: 45%;
+    height: 45%;
+}
+
+.description > div > span {
+    font-size: small;
+}
+
+.description > div {
+    width: 60%;
+}
+
+.workingOn img{
+    width:60%;
+}
+
+}
+/* Fin de Breakpoint para pantallas medianas*/
+
+/*Declaración de Breakpoint para pantallas pequeñas*/
+@media screen and (max-width: 992px) {
+
+.webdev {
+    width: 40%;
+}
+
+.name {
+    font-size: 2.1em;
+}
+    
+.developer {
+    font-size: 1.7em;
+}
+
+.description > div {
+    width: 70%;
+}
+    
+.social-img
+{
+    width: 4%;
+}
+
+.workingOn {
+    font-size: 3.3em;
+}
+}
+/* Fin de Breakpoint para pantallas pequeñas*/
+
+/*Declaración de Breakpoint para pantallas de tablet*/
+@media screen and (max-width: 700px) {
+
+nav {
+    display: none;
+}
+
+.webdev {
+    display: none;
+}
+
+.description > div {
+    display: grid;
+    text-align: center;
+}
+
+.avatar {
+    width: 85%;
+    height: 90%;
+    justify-self: center;
+}
+
+.animated_avatar{
+    transition: opacity 2000ms;
+    opacity: 0;
+}
+
+#little_description{
+    display: block;
+    font-size: medium;
+    margin-bottom: 1.3em;
+}
+
+#more_about{
+    display: none;
+    align-items: center;
+}
+    
+.social{
+    margin-top: 1.5em;
+}
+
+.social-img
+{
+    width: 7%;
+}
+    
+.workingOn {
+    display: none;
+}
+}
+    /* Fin de Breakpoint para pantallas de tablet*/
+
+/*Declaraciones de Breakpoints para pantallas más pequeñas*/
+
+@media screen and (max-width: 600px) {
+    .social-img{
+        width: 11%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+.social{
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.social-img{
+    width: 18%;
+}
+}
+
+    /* Fin de Breakpoint para pantallas más pequeñas*/
 
 

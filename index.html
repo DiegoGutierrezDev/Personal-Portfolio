@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Hind&family=Montserrat:wght@700&family=Proza+Libre:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/welcome.css">
 </head>
 <body>
     <header>
@@ -41,7 +42,7 @@
     </header>
     
     <main class="content">
-        <span>Hola! 👋 soy</span>
+        <span id="hi">Hola! 👋 soy</span>
             <section class="greeting">
                 <div class="first"><div>Diego Gutiérrez</div></div>
                 <div class="second"><div>Desarrollador Web</div></div>
@@ -50,22 +51,34 @@
             
         </main>
         
-        <div class="description">
+        <div class="description" id="description">
             <div>
-                <span>
+                <span id="more_about">
                     He encontrado mi vocación en el mundo de la programación, me encanta aprender y seguir siempre practicando, me encanta la sensación de mejora y de sentir el progreso, el uso de la lógica y el constante rompecabezas que es la programación.
                     <br> <br>
                     Empecé a estudiar de forma autodidacta en 2018 y desde entonces no he parado, es algo que desde el principio me enganchó y que me gusta mucho practicar, desde entonces he realizado múltiples cursos, un Grado Superior de Administración de Sistemas Informáticos en Red y actualmente estoy realizando dos cursos y un portafolio, además de la búsqueda de empleo, te interesa?
                     </span>
-                <img src="img/CV.jpeg" alt="fotoPersonal" class="avatar">
+
+                    <span id="little_description">
+                        Bienvenido! <br>Quieres saber más? Haz click sobre la foto!
+                    </span>
+
+                <img src="img/CV.jpeg" alt="fotoPersonal" class="avatar" id="cv_photo">
+
             </div>
+    </div>
+
+    <div class="back">
+        <a class="back__button" onclick="location.reload()">Volver atrás...</a>
     </div>
 
     <div class="workingOn">
 
-        <img src="img/1366_2000.jpeg" alt="enDesarrollo" style="width:50%; border-radius:20px;">
+        <img src="img/coming_soon.jpeg" alt="enDesarrollo">
         <span style="position:absolute">En Desarrollo...</span>
     </div>
 
+
+<script type="text/javascript" src="./js/functions.js"></script>
 </body>
 </html>
